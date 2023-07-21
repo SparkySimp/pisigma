@@ -1,0 +1,63 @@
+%% LyX 2.3.7 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[english]{article}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{luainputenc}
+\usepackage{babel}
+\begin{document}
+\caption{PiSigma, the ratio of multiplication to summation}
+
+\[
+\frac{\prod}{\sum}(x,n)=\frac{2n!}{(n+1)(x-1)!\cdot(n-x+1)}
+\]
+
+PiSigma is the function that denotes the ratio of product of n natural
+numbers from x to their sum. Originally implemented as a function
+for cryptographic algorithms, it can serve as an average function.
+
+The function $\ensuremath{\frac{2n!}{(n+1)(x-1)!\cdot(n-x+1)}}$can
+be used in various scenarios that involve calculating ratios or probabilities
+where factorials and products of factorials are relevant. One possible
+use case for this function could be in the field of combinatorics
+or probability theory.
+
+Use Case: Combinatorial Analysis
+
+In combinatorics, one might encounter problems that involve counting
+arrangements, combinations, or permutations of elements. For example,
+consider the following scenario:
+
+Suppose you have a set of \textquotedbl n\textquotedbl{} distinct
+objects, and you want to choose \textquotedbl x\textquotedbl{} of
+them in a specific order, allowing repetition. In other words, you
+want to find the number of ways to select \textquotedbl x\textquotedbl{}
+objects from a set of \textquotedbl n\textquotedbl{} objects, where
+the order of selection matters, and repetitions are allowed.
+
+The function $\frac{2n!}{(n+1)(x-1)!\cdot(n-x+1)}$ can be used to
+solve this problem. The expression $\ensuremath{\frac{2n!}{(n+1)(x-1)!\cdot(n-x+1)}}$calculates
+the number of permutations with repetitions allowed, where \textquotedbl n\textquotedbl{}
+is the total number of distinct objects, and \textquotedbl x\textquotedbl{}
+is the number of objects to be selected.
+
+To clarify, the numerator $\ensuremath{2n!}$represents the total
+number of permutations of \textquotedbl n\textquotedbl{} distinct
+objects, accounting for repetitions (since repetitions are allowed,
+the set of \textquotedbl n\textquotedbl{} objects is doubled). The
+denominator $\ensuremath{(n+1)(x-1)!\cdot(n-x+1)}$is used to account
+for overcounting due to repetitions.
+
+For example, if you have a set of 3 distinct objects (n = 3) and want
+to choose 2 of them in a specific order (x = 2), the function evaluates
+to:
+
+$\frac{2\cdot3!}{(3+1)(2-1)!\cdot(3-2+1)}=\frac{12}{4}=3$
+
+This result tells you that there are 3 different permutations when
+choosing 2 objects from a set of 3 objects with repetitions allowed
+and the order matters.
+
+Overall, the function can be utilized in combinatorial problems where
+permutations with repetitions allowed are required, making it a useful
+tool in various counting and arrangement scenarios.
+\end{document}
